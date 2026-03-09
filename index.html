@@ -2,39 +2,77 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>İpek için ❤️</title>
+<title>İpek'e 💖</title>
+
 <style>
 body{
 margin:0;
 font-family:Arial;
-background:linear-gradient(135deg,#ff9a9e,#fecfef);
 text-align:center;
-color:#333;
+background:linear-gradient(135deg,#ff9a9e,#fecfef);
 overflow-x:hidden;
-position:relative;
 }
-.container{
-background:white;
-max-width:750px;
-margin:60px auto;
-padding:40px;
+
+h1{
+color:#ff1a75;
+margin-top:40px;
+}
+
+p{
+width:70%;
+margin:auto;
+font-size:20px;
+line-height:1.8;
+color:#333;
+}
+
+.galeri{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+.galeri img{
+width:220px;
 border-radius:20px;
-box-shadow:0 15px 40px rgba(0,0,0,0.2);
-position:relative;
-}
-h1{color:#ff3b6b;}
-button{
-background:#ff3b6b;
-color:white;
-border:none;
-padding:14px 30px;
-font-size:18px;
-border-radius:25px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:transform 0.3s;
 cursor:pointer;
-margin-top:20px;
 }
-.hidden{display:none;margin-top:30px;}
-.hearts, .sideHearts{
+
+.galeri img:hover{
+transform:scale(1.1);
+}
+
+.solYazi{
+position:fixed;
+left:20px;
+top:0;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+font-size:22px;
+color:#ff4da6;
+font-weight:bold;
+}
+
+.sagYazi{
+position:fixed;
+right:20px;
+top:0;
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+font-size:22px;
+color:#ff4da6;
+font-weight:bold;
+}
+
+.hearts{
 position:fixed;
 top:0;
 left:0;
@@ -44,107 +82,103 @@ pointer-events:none;
 overflow:hidden;
 z-index:1;
 }
-.heart, .sideHeart{
+
+.heart{
 position:absolute;
-color:#ff3b6b;
+color:#ff1a75;
 font-size:22px;
 animation:fall 6s linear infinite;
 }
-.sideHeart{font-size:28px; font-weight:bold; color:#ff1a6b;}
-.sideHeart.right{left:auto; right:0; text-align:right;}
+
 @keyframes fall{
 0%{transform:translateY(-10vh);opacity:1;}
 100%{transform:translateY(110vh);opacity:0;}
 }
-ul{text-align:left;max-width:500px;margin:auto;}
+
 #daysCounter,#fullCounter{
-font-size:20px;color:#ff3b6b;font-weight:bold;margin-top:10px;
+font-size:20px;color:#ff1a75;font-weight:bold;margin-top:10px;
 }
 </style>
 </head>
+
 <body>
 
+<audio id="romantikMuzik" autoplay loop>
+<source src="romantik.mp3" type="audio/mpeg">
+</audio>
+
 <div class="hearts"></div>
-<div class="sideHearts"></div>
 
-<div class="container">
-<h1>İpek için sürpriz ❤️</h1>
-<p>Bu sayfa senin için özel olarak hazırlandı 💌</p>
-<button onclick="showContent()">Sürprizi Aç</button>
-
-<div id="content" class="hidden">
-
-<h2>⏳ Tanıştığımızdan beri</h2>
-<p id="daysCounter"></p>
-<p id="fullCounter"></p>
-
-<h2>💌 Sana söylemek istediklerim</h2>
-<p>
-İpek, her gün seni düşündüğümde kalbim hızla çarpıyor, gözlerini hatırladıkça içimde tarifsiz bir sıcaklık hissediyorum. Seninle geçirdiğim her an hayatımın en değerli parçaları, her gülüşün, her bakışın, her küçük sözün bana tarifsiz bir mutluluk veriyor. Bazen sessiz bir anda aklıma düşüyorsun ve fark ediyorum ki tüm dünya kaybolmuş, sadece sen ve ben kalmışız gibi hissediyorum. Senin yanında olmak, seninle konuşmak, seninle gülmek hayatın en saf, en gerçek mutluluğunu hissettiriyor bana. Ne zaman üzgün olsam, senin varlığın bir sığınak gibi geliyor. Sen bana sadece aşkı değil, sabrı, huzuru, anlayışı, dostluğu da öğrettin. Seninle hayal kurmak, birlikte geleceğe dair planlar yapmak, beni her geçen gün daha da güçlendiriyor, daha da mutlu ediyor. Bazen kelimeler yetersiz kalıyor seni anlatmaya, ama bilmeni istiyorum ki hislerim senin için sınırsız, derin ve sonsuz. Her gün, her dakika, her saniye seni biraz daha çok seviyorum. Kalbim sana ait ve hep sana ait olacak. İpek, seninle yaşadığım her an bir mucize, her mesajın, her sesin, her dokunuşun bir armağan. İyi ki varsın, iyi ki hayatıma girdin, iyi ki seni tanıdım, iyi ki sen benim yanımdasın. Seninle olmak, seninle ağlamak, seninle gülmek hepsi bana dünyanın en değerli şeylerini hissettiriyor. Ve şunu bilmeni isterim ki, bu hislerim her geçen gün daha da büyüyor, sana olan sevgim hiçbir zaman bitmeyecek, her zaman seni sevecek, hep yanında olacağım. İpek, seni her zamankinden daha çok, her zamankinden daha derinden, her zamankinden daha tutkuyla seviyorum. Her düşüncem, her nefesim, senin için atıyor. Seninle olmak, seninle hayal kurmak, seninle birlikte yaşlanmak istiyorum. Senin varlığın hayatımın en büyük mucizesi ve en değerli hediyesi. Seninle olduğum her an dünyadaki tüm güzellikler birleşiyor ve benim oluyor. Her mesajın, her bakışın, her gülüşün bana umut veriyor. Senin sevgine her gün yeniden aşık oluyorum, her geçen saniye seni daha çok seviyorum. Seninle hayatta paylaşamadığımız acılar, mutluluklar, hayaller ve sessizlikler bile bana seninle olmayı öğretiyor. Her düşüşümde, her hatamda senin varlığın bana güç veriyor. Seninle konuşmak, gülmek, hayal kurmak, hayatı yeniden anlamak demek. Seninle olmak, seninle her anı paylaşmak, seninle hayatta büyümek, seni daha çok sevmek demek. Seninle ağlamak, seninle gülmek, seninle susmak, seninle konuşmak, seni dinlemek, hayatımın her saniyesini seninle paylaşmak demek. Senin sevginle güçleniyorum, senin varlığınla mutluluk doluyorum. İpek, seni sevmenin tarifi yok ama bil ki kalbim sadece sana ait ve hep öyle kalacak, seninle olduğum her an hayatımın en değerli anı olacak. Her nefesim, her düşüncem, her küçük mutluluğum seninle birleşiyor ve bu hislerim hiçbir zaman bitmeyecek, her zaman büyüyecek, her zaman sana ait olacak.
-</p>
-
-<h2>🤝 Zor zamanlar için</h2>
-<p>
-Hayat her zaman kolay olmayacak; bazen kırılacağız, bazen yorulacağız, bazen her şey üst üste gelecek ama şunu bilmeni istiyorum: ne olursa olsun senin yanında kalmak istiyorum. Güzel günlerde herkes yanında olabilir ama önemli olan zor zamanlarda da elini bırakmamaktır. Ben senin elini bırakmak için değil, daha sıkı tutmak için hayatındayım.
-</p>
-
-<h2>❤️ Seni Sevmemin 20 Nedeni</h2>
-<ul>
-<li>Gülüşün dünyamı güzelleştiriyor</li>
-<li>Bana verdiğin huzur</li>
-<li>Beni gerçekten anlamaya çalışman</li>
-<li>Sesini duyunca mutlu olmam</li>
-<li>Bana sabretmen</li>
-<li>Kalbinin güzelliği</li>
-<li>Bazen çocuk gibi olman</li>
-<li>Beni güldürmen</li>
-<li>Yanımda olduğunda kendim gibi hissedebilmem</li>
-<li>Gözlerindeki sıcaklık</li>
-<li>Hayatımda olman</li>
-<li>Beni önemsemen</li>
-<li>Küçük şeylerle mutlu olman</li>
-<li>Bana değer vermen</li>
-<li>Ben üzülünce üzülmen</li>
-<li>Benimle hayal kurman</li>
-<li>Beni değiştirmeye çalışmaman</li>
-<li>İçten olman</li>
-<li>Kalbimin en güzel yerinde olman</li>
-<li>Ve en önemlisi... sen olman</li>
-</ul>
-
+<div class="solYazi">
+<div>Seni çok seviyorum İpek</div>
+<div>Seni çok seviyorum İpek</div>
+<div>Seni çok seviyorum İpek</div>
+<div>Seni çok seviyorum İpek</div>
 </div>
+
+<div class="sagYazi">
+<div>Seni çok seviyorum İpek</div>
+<div>Seni çok seviyorum İpek</div>
+<div>Seni çok seviyorum İpek</div>
+<div>Seni çok seviyorum İpek</div>
+</div>
+
+<h1>İpek 💖</h1>
+
+<p>
+İpek, seni ne kadar sevdiğimi kelimelerle anlatmak bazen gerçekten zor geliyor.
+Çünkü kalbimde sana karşı olan duygularım o kadar büyük ki, bazen hiçbir kelime
+yeterli olmuyor. Ama yine de bilmeni istiyorum ki hayatımda olduğun için kendimi
+çok şanslı hissediyorum. Senin gülüşünü görmek, sesini duymak ya da sadece
+yanımda olduğunu bilmek bile günümü güzelleştirmeye yetiyor.
+
+Bazen düşünüyorum da, insan birini bu kadar nasıl sevebilir diye…
+Ama sonra seni hatırlıyorum ve anlıyorum. Çünkü sen gerçekten çok özelsin.
+Seninle konuşmak, seninle vakit geçirmek, hatta sadece sana bakmak bile
+insana huzur veren bir şey.
+
+Hayat bazen karmaşık olabiliyor, bazen günler zor geçebiliyor ama
+senin varlığın her şeyi daha güzel ve daha anlamlı hale getiriyor.
+Seninle paylaştığım her an benim için çok değerli.
+Küçük bir anı bile yıllarca hatırlayabileceğim kadar kıymetli oluyor.
+
+Sana baktığım zaman sadece bugünü değil,
+gelecekteki güzel anları da hayal ediyorum.
+Beraber güleceğimiz günleri,
+birbirimize destek olacağımız zamanları,
+ve birlikte yaşayacağımız tüm güzel anıları.
+
+Sen benim hayatıma sadece bir insan olarak değil,
+aynı zamanda mutluluk, huzur ve anlam getiren biri olarak girdin.
+Bu yüzden sana olan sevgim her geçen gün daha da büyüyor.
+
+Bazen sadece şunu söylemek istiyorum:
+İyi ki varsın İpek.
+Gerçekten iyi ki varsın.
+</p>
+
+<div id="daysCounter"></div>
+<div id="fullCounter"></div>
+
+<h2>📸 Bizden Anılar</h2>
+
+<div class="galeri">
+<img src="1243c9fe-4d37-40d1-9a02-a909bf4c77f4.jpg">
+<img src="13298eea-b3ca-41fa-8bb7-805af1387f08.jpg">
+<img src="1c7a87d1-49b6-4cdf-bc7a-4d8eacfda991.jpg">
+<img src="55c50e32-ce74-4660-8399-6d492187c50a.jpg">
+<img src="6fb9f1c5-efee-4d5d-87b2-4e8856e85bd4.jpg">
+<img src="791d7e8f-0931-4ead-b73a-65a0e86b8612.jpg">
+<img src="914eb98b-7112-4c0a-aee4-d18cd2119589.jpg">
+<img src="a53ded7d-ce58-4e85-aeba-47ac88b20d96.jpg">
+<img src="cc897f0d-6a13-4ac6-9248-7dc7154a822e.jpg">
+<img src="e01f421f-c8a1-418c-b1bf-562438036c0a.jpg">
+<img src="eb56a5fb-df44-4fde-bfea-357a28133b20.jpg">
+<img src="f8d783cf-3920-49f4-82ec-e55390dea669.jpg">
 </div>
 
 <script>
-function showContent(){
-document.getElementById("content").style.display="block";
-}
-
-// Uçan kalpler
-function createHeart(){
-const heart=document.createElement("div");
-heart.classList.add("heart");
-heart.innerHTML="❤️";
-heart.style.left=Math.random()*100+"vw";
-heart.style.animationDuration=(Math.random()*3+3)+"s";
-document.querySelector(".hearts").appendChild(heart);
-setTimeout(()=>{heart.remove();},6000);
-}
-setInterval(createHeart,400);
-
-// Yan boşluklarda uçan yazılar (sağa kaydırıldı)
-function createSideHeart(){
-const sideHeart=document.createElement("div");
-sideHeart.classList.add("sideHeart","right");
-sideHeart.innerHTML="SENİ ÇOOOOOOK SEVİYORUMMMMMMM İPEK";
-sideHeart.style.top=Math.random()*100+"vh";
-sideHeart.style.animationDuration=(Math.random()*5+5)+"s";
-document.querySelector(".sideHearts").appendChild(sideHeart);
-setTimeout(()=>{sideHeart.remove();},10000);
-}
-setInterval(createSideHeart,800);
-
-// Gün sayacı ve tam zaman
+// Gün sayacı
 function updateCounters(){
 const startDate = new Date("May 21, 2025 00:00:00");
 const now = new Date();
@@ -162,6 +196,18 @@ document.getElementById("fullCounter").innerHTML = "Tam zaman: " + days + " gün
 }
 setInterval(updateCounters,1000);
 updateCounters();
+
+// Uçan kalpler
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤️";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*3+3)+"s";
+document.querySelector(".hearts").appendChild(heart);
+setTimeout(()=>{heart.remove();},6000);
+}
+setInterval(createHeart,400);
 </script>
 
 </body>
