@@ -42,7 +42,7 @@ p{
   box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Kenar yazıları */
+/* Kenar yazıları (sadece desktop) */
 .solYazi, .sagYazi{
   position:fixed;
   top:0;
@@ -58,6 +58,13 @@ p{
 
 .solYazi{left:10px;}
 .sagYazi{right:10px;}
+
+/* Mobilde kenar yazıları gizle */
+@media(max-width:768px){
+  .solYazi,.sagYazi{
+    display:none;
+  }
+}
 
 /* Kalpler */
 .hearts{
@@ -130,7 +137,14 @@ p{
   transform:scale(1.05);
 }
 
-/* Aşağı kaydırma boşluğu */
+/* Mobilde galeri düzeni */
+@media(max-width:768px){
+  #galeriContainer img{
+    width:90%;
+    max-width:300px;
+  }
+}
+
 .scrollSpacer{
   height:50px;
 }
@@ -214,7 +228,7 @@ const heartsContainer = document.querySelector(".hearts");
 let maxHearts = 10;
 function createHeart(){
   const hearts = heartsContainer.querySelectorAll(".heart").length;
-  if(hearts >= maxHearts) return; // fazla kalp oluşturma
+  if(hearts >= maxHearts) return;
   const heart=document.createElement("div");
   heart.classList.add("heart");
   heart.innerHTML="❤️";
@@ -223,7 +237,7 @@ function createHeart(){
   heartsContainer.appendChild(heart);
   setTimeout(()=>{heart.remove();},6000);
 }
-setInterval(createHeart,800); // 0.8 saniyede bir kalp
+setInterval(createHeart,800);
 
 // Supriz butonu
 document.getElementById("suprizBtn").addEventListener("click",function(){
