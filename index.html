@@ -1,213 +1,157 @@
-[23:23, 09.03.2026] Gökay: <!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<title>İpek'e 💖</title>
-
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-background:linear-gradient(135deg,#ff9a9e,#fecfef);
-overflow-x:hidden;
-}
-
-h1{
-color:#ff1a75;
-margin-top:40px;
-}
-
-p{
-width:70%;
-margin:auto;
-font-size:20px;
-line-height:1.8;
-color:#333;
-}
-
-.zorZamanlar{
-width:70%;
-margin:30px auto;
-font-size:18px;
-line-height:1.7;
-color:#222;
-background:#ffe6f0;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-.solYazi{
-position:fixed;
-left:20px;
-top:0;
-height:100%;
-display:flex;
-flex-direction:column;
-justify-content:space-around;
-font-size:22px;
-color:#ff4da6;
-font-weight:bold;
-}
-
-.sagYazi{
-position:fixed;
-right:20px;
-top:0;
-height:100%;
-display:fle…
-[23:26, 09.03.2026] Gökay: https://gokkkkaaayyy.github.io/ipe-immmme-suprizzzz/
-[23:33, 09.03.2026] Gökay: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>İpek'e 💖</title>
-
 <style>
 body{
-margin:0;
-font-family:Arial, sans-serif;
-text-align:center;
-background:linear-gradient(135deg,#ff9a9e,#fecfef);
-overflow-x:hidden;
+  margin:0;
+  font-family:Arial, sans-serif;
+  text-align:center;
+  background:linear-gradient(135deg,#ff9a9e,#fecfef);
+  overflow-x:hidden;
 }
 
+/* Başlık ve paragraf */
 h1{
-color:#ff1a75;
-margin-top:40px;
-font-size:2.5em;
+  color:#ff1a75;
+  margin-top:40px;
+  font-size:2.5em;
 }
 
 p{
-width:90%;
-max-width:800px;
-margin:30px auto;
-font-size:20px;
-line-height:1.9;
-color:#333;
+  width:90%;
+  max-width:800px;
+  margin:30px auto;
+  font-size:20px;
+  line-height:1.9;
+  color:#333;
 }
 
 .zorZamanlar{
-width:90%;
-max-width:800px;
-margin:50px auto;
-font-size:20px;
-line-height:1.9;
-color:#222;
-background:#ffe6f0;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  width:90%;
+  max-width:800px;
+  margin:50px auto;
+  font-size:20px;
+  line-height:1.9;
+  color:#222;
+  background:#ffe6f0;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
+/* Kenar yazıları */
 .solYazi, .sagYazi{
-position:fixed;
-top:0;
-height:100%;
-display:flex;
-flex-direction:column;
-justify-content:space-around;
-font-size:20px;
-font-weight:bold;
-z-index:2;
-color:#ff4da6;
+  position:fixed;
+  top:0;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  font-size:20px;
+  font-weight:bold;
+  z-index:2;
+  color:#ff4da6;
 }
 
 .solYazi{left:10px;}
 .sagYazi{right:10px;}
 
+/* Kalpler */
 .hearts{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-pointer-events:none;
-overflow:hidden;
-z-index:1;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+  overflow:hidden;
+  z-index:1;
 }
 
 .heart{
-position:absolute;
-color:#ff1a75;
-font-size:22px;
-animation:fall 6s linear infinite;
+  position:absolute;
+  color:#ff1a75;
+  font-size:22px;
+  animation:fall 6s linear forwards;
 }
 
 @keyframes fall{
-0%{transform:translateY(-10vh);opacity:1;}
-100%{transform:translateY(110vh);opacity:0;}
+  0%{transform:translateY(-10vh);opacity:1;}
+  100%{transform:translateY(110vh);opacity:0;}
 }
 
 #daysCounter,#fullCounter{
-font-size:20px;
-color:#ff1a75;
-font-weight:bold;
-margin-top:20px;
+  font-size:20px;
+  color:#ff1a75;
+  font-weight:bold;
+  margin-top:20px;
 }
 
 #suprizBtn{
-margin:50px auto 20px auto;
-padding:15px 30px;
-font-size:20px;
-background:#ff1a75;
-color:white;
-border:none;
-border-radius:12px;
-cursor:pointer;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-transition:transform 0.3s;
-display:block;
+  margin:50px auto 20px auto;
+  padding:15px 30px;
+  font-size:20px;
+  background:#ff1a75;
+  color:white;
+  border:none;
+  border-radius:12px;
+  cursor:pointer;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  transition:transform 0.3s;
+  display:block;
 }
 
 #suprizBtn:hover{
-transform:scale(1.05);
+  transform:scale(1.05);
 }
 
+/* Galeri */
 #galeriContainer{
-display:none;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
-margin-top:20px;
+  display:none;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  margin-top:20px;
 }
 
 #galeriContainer img{
-width:45%;
-max-width:220px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-transition:transform 0.3s;
-cursor:pointer;
+  width:45%;
+  max-width:220px;
+  border-radius:20px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:transform 0.3s;
+  cursor:pointer;
 }
 
 #galeriContainer img:hover{
-transform:scale(1.05);
+  transform:scale(1.05);
+}
+
+/* Aşağı kaydırma boşluğu */
+.scrollSpacer{
+  height:50px;
 }
 </style>
 </head>
 <body>
 
-<audio id="romantikMuzik" autoplay loop>
-<source src="romantik.mp3" type="audio/mpeg">
-</audio>
-
 <div class="hearts"></div>
 
 <div class="solYazi">
-<div>Seni çok seviyorum İpek</div>
-<div>Seni çok seviyorum İpek</div>
-<div>Seni çok seviyorum İpek</div>
-<div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
 </div>
 
 <div class="sagYazi">
-<div>Seni çok seviyorum İpek</div>
-<div>Seni çok seviyorum İpek</div>
-<div>Seni çok seviyorum İpek</div>
-<div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
+  <div>Seni çok seviyorum İpek</div>
 </div>
 
 <h1>İpek 💖</h1>
@@ -217,20 +161,19 @@ transform:scale(1.05);
 İpek, seni ne kadar sevdiğimi kelimelerle anlatmak bazen gerçekten zor geliyor. Kalbimde sana karşı hissettiğim duygular öyle derin, öyle yoğun ki, bazen hiçbir kelime bunları ifade etmeye yetmiyor. Ama bilmeni istiyorum ki, hayatımda olduğun için kendimi her gün çok şanslı hissediyorum. Senin gülüşünü görmek, sesini duymak ya da sadece yanında olduğunu bilmek bile günümü güzelleştirmeye yetiyor. Senin yanında olmak bana öyle bir huzur veriyor ki, sanki tüm dünya sadece ikimiz için durmuş gibi oluyor. Her sabah seninle başlayacak bir günü hayal etmek, hayatımı renklendiriyor ve bana heyecan veriyor. Sen benim en değerli parçam, hayatımın en güzel yanı, güvenli sığınağımsın. Seninle konuştuğum her saniye, paylaştığımız her an benim için çok kıymetli. Seni düşündüğümde kalbim hızla çarpıyor, yüzümde istemsiz bir gülümseme beliriyor ve sanki tüm evren bir anda daha parlak, daha güzel bir yer oluyor. Seninle geçirdiğim zamanlarda kendimi tamamlanmış, tam ve huzurlu hissediyorum. Seni sevmenin tarifi yok, sadece hissediliyor ve her his daha derin, daha gerçek, daha kalıcı oluyor. Senin yanında olunca, geçmişin tüm yükleri hafifliyor, geleceğin belirsizlikleri bile daha az korkutucu geliyor. Sen benim hem sığınağım, hem ilham kaynağım, hem de en değerli hazinemsin. Hayatımda sen olduğun için minnettarım ve her geçen gün sana olan sevgim daha da derinleşiyor. Sana dokunduğumda, ellerin ellerimdeyken, tüm kaygılarımı, tüm üzüntülerimi unutuyorum; sadece sen ve ben kalıyoruz, birbirimize ait, birbirimizi tamamlayan iki ruh olarak. Seni düşündükçe, her an daha fazla aşık oluyorum. Seninle hayaller kurmak, seninle gülmek, seninle ağlamak, seninle sessizliği paylaşmak… Hepsi benim için tarifsiz bir mutluluk. Sen benim ışığımsın, yol göstericimsin, en güzel rüyam ve en gerçek hislerimsin. Her gün seninle olmayı hayal ediyor, her anı seninle paylaşmak istiyorum. Seninle bir kahkaha, bir bakış, bir dokunuş… Hepsi hayatımı güzelleştiriyor, anlam katıyor ve bana hayatta olduğumu hissettiriyor. Seni sevmenin sınırı yok, tarifi yok, kelimeleri yetmiyor ama bil ki kalbim her saniye seninle atıyor, her düşüncem sana dönüyor ve seni sevmek hayatımın en güzel gerçeği. İsterim ki hayatın her anında yanımda ol, her mutluluğu, her üzüntüyü, her heyecanı seninle paylaşayım. Sen benim en büyük şansımsın ve seni sevmek bana nefes almak kadar doğal, huzur kadar güvenli, rüya kadar güzel geliyor.
 </p>
 
-<!-- Aşağı kaydırma boşluğu -->
-<div style="height:50px;"></div>
+<div class="scrollSpacer"></div>
 
 <!-- Zor Zamanlar Paragrafı -->
 <div class="zorZamanlar">
 Bazen hayat zorlu anlarla dolu, günler karmaşık ve içimiz sıkışmış hissedebiliriz. Ama bilmeni istiyorum ki, zor zamanlarda da hep yanında olacağım. Seninle birlikteyken, ne kadar karışık olursa olsun her şeyin üstesinden gelebileceğimizi biliyorum. Elini tuttuğumda ve yanında olduğumda tüm kaygılar küçülüyor, sorunlar önemsizleşiyor. Hayatın fırtınalarında birlikte duruyoruz ve bu bana güven, huzur ve mutluluk veriyor. Sen benim hem sığınağım hem de en değerli hazinemsin. Her sıkıntıda, her belirsizlikte, her üzüntü anında yanında olacağım. Beraber gülecek, beraber ağlayacak ve her zaman birbirimizin elini tutacağız. Seninle olmak, zor zamanlarda bile bana güç ve cesaret veriyor. Hayatın getirdiği tüm fırtınalara birlikte göğüs gereceğiz ve birbirimizi hep destekleyeceğiz.
 </div>
 
-<!-- Gün sayacı -->
 <div id="daysCounter"></div>
 <div id="fullCounter"></div>
 
-<!-- Aşağı kaydırınca Supriz Butonu -->
-<div style="height:50px;"></div>
+<div class="scrollSpacer"></div>
+
+<!-- Supriz Butonu -->
 <button id="suprizBtn">🎁 Supriz</button>
 
 <!-- Galeri -->
@@ -252,39 +195,42 @@ Bazen hayat zorlu anlarla dolu, günler karmaşık ve içimiz sıkışmış hiss
 <script>
 // Gün sayacı
 function updateCounters(){
-const startDate = new Date("May 21, 2025 00:00:00");
-const now = new Date();
-const diff = now - startDate;
-const days = Math.floor(diff / (1000*60*60*24));
-document.getElementById("daysCounter").innerHTML = "21 Mayıs 2025'ten beri tam <b>" + days + " gün</b> geçti ve ben her gün seni biraz daha seviyorum ❤️";
-const totalSeconds = Math.floor(diff/1000);
-const hours = Math.floor((totalSeconds % 86400)/3600);
-const minutes = Math.floor((totalSeconds % 3600)/60);
-const seconds = totalSeconds % 60;
-document.getElementById("fullCounter").innerHTML = "Tam zaman: " + days + " gün " + hours + " saat " + minutes + " dakika " + seconds + " saniye";
+  const startDate = new Date("May 21, 2025 00:00:00");
+  const now = new Date();
+  const diff = now - startDate;
+  const days = Math.floor(diff / (1000*60*60*24));
+  document.getElementById("daysCounter").innerHTML = "21 Mayıs 2025'ten beri tam <b>" + days + " gün</b> geçti ve ben her gün seni biraz daha seviyorum ❤️";
+  const totalSeconds = Math.floor(diff/1000);
+  const hours = Math.floor((totalSeconds % 86400)/3600);
+  const minutes = Math.floor((totalSeconds % 3600)/60);
+  const seconds = totalSeconds % 60;
+  document.getElementById("fullCounter").innerHTML = "Tam zaman: " + days + " gün " + hours + " saat " + minutes + " dakika " + seconds + " saniye";
 }
 setInterval(updateCounters,1000);
 updateCounters();
 
-// Uçan kalpler
+// Uçan kalpler (max 10 kalp aynı anda)
+const heartsContainer = document.querySelector(".hearts");
+let maxHearts = 10;
 function createHeart(){
-const heart=document.createElement("div");
-heart.classList.add("heart");
-heart.innerHTML="❤️";
-heart.style.left=Math.random()*100+"vw";
-heart.style.animationDuration=(Math.random()*3+3)+"s";
-document.querySelector(".hearts").appendChild(heart);
-setTimeout(()=>{heart.remove();},6000);
+  const hearts = heartsContainer.querySelectorAll(".heart").length;
+  if(hearts >= maxHearts) return; // fazla kalp oluşturma
+  const heart=document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML="❤️";
+  heart.style.left=Math.random()*90+"vw";
+  heart.style.animationDuration=(Math.random()*3+3)+"s";
+  heartsContainer.appendChild(heart);
+  setTimeout(()=>{heart.remove();},6000);
 }
-setInterval(createHeart,400);
+setInterval(createHeart,800); // 0.8 saniyede bir kalp
 
 // Supriz butonu
 document.getElementById("suprizBtn").addEventListener("click",function(){
-const galeri = document.getElementById("galeriContainer");
-if(galeri.style.display==="flex"){galeri.style.display="none";}
-else{galeri.style.display="flex";}
+  const galeri = document.getElementById("galeriContainer");
+  if(galeri.style.display==="flex"){galeri.style.display="none";}
+  else{galeri.style.display="flex"; galeri.scrollIntoView({behavior:"smooth"});}
 });
 </script>
-
 </body>
 </html>
