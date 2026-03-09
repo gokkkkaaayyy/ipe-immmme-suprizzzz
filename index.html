@@ -1,21 +1,3 @@
-[22:56, 09.03.2026] Gökay: <h2>📸 Bizden Anılar</h2>
-
-<div class="galeri">
-
-<img src="1243c9fe-4d37-40d1-9a02-a909bf4c77f4.jpg">
-<img src="13298eea-b3ca-41fa-8bb7-805af1387f08.jpg">
-<img src="1c7a87d1-49b6-4cdf-bc7a-4d8eacfda991.jpg">
-<img src="55c50e32-ce74-4660-8399-6d492187c50a.jpg">
-<img src="6fb9f1c5-efee-4d5d-87b2-4e8856e85bd4.jpg">
-<img src="791d7e8f-0931-4ead-b73a-65a0e86b8612.jpg">
-<img src="914eb98b-7112-4c0a-aee4-d18cd2119589.jpg">
-<img src="a53ded7d-ce58-4e85-aeba-47ac88b20d96.jpg">
-<img src="cc897f0d-6a13-4ac6-9248-7dc7154a822e.jpg">
-<img src="e01f421f-c8a1-418c-b1bf-562438036c0a.jpg">
-<img src="eb56a5fb-df44-4fde-bfea-357a28133b20.jpg">
-<img src="f8d783cf-3920-49f4-82ec-e55390dea669.jpg">
-
-</div>
 [23:23, 09.03.2026] Gökay: <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -76,7 +58,7 @@ top:0;
 height:100%;
 display:fle…
 [23:26, 09.03.2026] Gökay: https://gokkkkaaayyy.github.io/ipe-immmme-suprizzzz/
-[23:29, 09.03.2026] Gökay: <!DOCTYPE html>
+[23:33, 09.03.2026] Gökay: <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
@@ -86,7 +68,7 @@ display:fle…
 <style>
 body{
 margin:0;
-font-family:Arial;
+font-family:Arial, sans-serif;
 text-align:center;
 background:linear-gradient(135deg,#ff9a9e,#fecfef);
 overflow-x:hidden;
@@ -95,58 +77,46 @@ overflow-x:hidden;
 h1{
 color:#ff1a75;
 margin-top:40px;
-font-size:2em;
+font-size:2.5em;
 }
 
 p{
 width:90%;
 max-width:800px;
-margin:20px auto;
-font-size:18px;
-line-height:1.8;
+margin:30px auto;
+font-size:20px;
+line-height:1.9;
 color:#333;
 }
 
 .zorZamanlar{
 width:90%;
 max-width:800px;
-margin:40px auto;
-font-size:18px;
-line-height:1.7;
+margin:50px auto;
+font-size:20px;
+line-height:1.9;
 color:#222;
 background:#ffe6f0;
-padding:20px;
+padding:25px;
 border-radius:15px;
 box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
-.solYazi{
+.solYazi, .sagYazi{
 position:fixed;
-left:10px;
 top:0;
 height:100%;
 display:flex;
 flex-direction:column;
 justify-content:space-around;
-font-size:18px;
-color:#ff4da6;
+font-size:20px;
 font-weight:bold;
 z-index:2;
+color:#ff4da6;
 }
 
-.sagYazi{
-position:fixed;
-right:10px;
-top:0;
-height:100%;
-display:flex;
-flex-direction:column;
-justify-content:space-around;
-font-size:18px;
-color:#ff4da6;
-font-weight:bold;
-z-index:2;
-}
+.solYazi{left:10px;}
+.sagYazi{right:10px;}
 
 .hearts{
 position:fixed;
@@ -172,13 +142,16 @@ animation:fall 6s linear infinite;
 }
 
 #daysCounter,#fullCounter{
-font-size:18px;color:#ff1a75;font-weight:bold;margin-top:10px;
+font-size:20px;
+color:#ff1a75;
+font-weight:bold;
+margin-top:20px;
 }
 
 #suprizBtn{
-margin:50px auto;
+margin:50px auto 20px auto;
 padding:15px 30px;
-font-size:18px;
+font-size:20px;
 background:#ff1a75;
 color:white;
 border:none;
@@ -252,10 +225,12 @@ transform:scale(1.05);
 Bazen hayat zorlu anlarla dolu, günler karmaşık ve içimiz sıkışmış hissedebiliriz. Ama bilmeni istiyorum ki, zor zamanlarda da hep yanında olacağım. Seninle birlikteyken, ne kadar karışık olursa olsun her şeyin üstesinden gelebileceğimizi biliyorum. Elini tuttuğumda ve yanında olduğumda tüm kaygılar küçülüyor, sorunlar önemsizleşiyor. Hayatın fırtınalarında birlikte duruyoruz ve bu bana güven, huzur ve mutluluk veriyor. Sen benim hem sığınağım hem de en değerli hazinemsin. Her sıkıntıda, her belirsizlikte, her üzüntü anında yanında olacağım. Beraber gülecek, beraber ağlayacak ve her zaman birbirimizin elini tutacağız. Seninle olmak, zor zamanlarda bile bana güç ve cesaret veriyor. Hayatın getirdiği tüm fırtınalara birlikte göğüs gereceğiz ve birbirimizi hep destekleyeceğiz.
 </div>
 
+<!-- Gün sayacı -->
 <div id="daysCounter"></div>
 <div id="fullCounter"></div>
 
-<!-- Supriz Butonu -->
+<!-- Aşağı kaydırınca Supriz Butonu -->
+<div style="height:50px;"></div>
 <button id="suprizBtn">🎁 Supriz</button>
 
 <!-- Galeri -->
