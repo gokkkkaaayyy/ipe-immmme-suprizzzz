@@ -26,24 +26,16 @@ line-height:1.8;
 color:#333;
 }
 
-.galeri{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-margin-top:30px;
-}
-
-.galeri img{
-width:220px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.2);
-transition:transform 0.3s;
-cursor:pointer;
-}
-
-.galeri img:hover{
-transform:scale(1.1);
+.zorZamanlar{
+width:70%;
+margin:30px auto;
+font-size:18px;
+line-height:1.7;
+color:#222;
+background:#ffe6f0;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 .solYazi{
@@ -98,9 +90,46 @@ animation:fall 6s linear infinite;
 #daysCounter,#fullCounter{
 font-size:20px;color:#ff1a75;font-weight:bold;margin-top:10px;
 }
+
+#suprizBtn{
+margin:50px auto;
+padding:15px 30px;
+font-size:20px;
+background:#ff1a75;
+color:white;
+border:none;
+border-radius:12px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+}
+
+#suprizBtn:hover{
+transform:scale(1.05);
+}
+
+#galeriContainer{
+display:none;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+}
+
+#galeriContainer img{
+width:220px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:transform 0.3s;
+cursor:pointer;
+}
+
+#galeriContainer img:hover{
+transform:scale(1.1);
+}
+
 </style>
 </head>
-
 <body>
 
 <audio id="romantikMuzik" autoplay loop>
@@ -131,38 +160,23 @@ font-size:20px;color:#ff1a75;font-weight:bold;margin-top:10px;
 yeterli olmuyor. Ama yine de bilmeni istiyorum ki hayatımda olduğun için kendimi
 çok şanslı hissediyorum. Senin gülüşünü görmek, sesini duymak ya da sadece
 yanımda olduğunu bilmek bile günümü güzelleştirmeye yetiyor.
-
-Bazen düşünüyorum da, insan birini bu kadar nasıl sevebilir diye…
-Ama sonra seni hatırlıyorum ve anlıyorum. Çünkü sen gerçekten çok özelsin.
-Seninle konuşmak, seninle vakit geçirmek, hatta sadece sana bakmak bile
-insana huzur veren bir şey.
-
-Hayat bazen karmaşık olabiliyor, bazen günler zor geçebiliyor ama
-senin varlığın her şeyi daha güzel ve daha anlamlı hale getiriyor.
-Seninle paylaştığım her an benim için çok değerli.
-Küçük bir anı bile yıllarca hatırlayabileceğim kadar kıymetli oluyor.
-
-Sana baktığım zaman sadece bugünü değil,
-gelecekteki güzel anları da hayal ediyorum.
-Beraber güleceğimiz günleri,
-birbirimize destek olacağımız zamanları,
-ve birlikte yaşayacağımız tüm güzel anıları.
-
-Sen benim hayatıma sadece bir insan olarak değil,
-aynı zamanda mutluluk, huzur ve anlam getiren biri olarak girdin.
-Bu yüzden sana olan sevgim her geçen gün daha da büyüyor.
-
-Bazen sadece şunu söylemek istiyorum:
-İyi ki varsın İpek.
-Gerçekten iyi ki varsın.
 </p>
+
+<div class="zorZamanlar">
+Bazen hayat zorlu anlarla dolu, günler karmaşık ve içimiz sıkışmış hissedebiliriz.
+Ama ben bilmeni istiyorum ki, zor zamanlarda da senin yanında olacağım.
+Seninle birlikteyken, ne kadar karışık olursa olsun her şeyin üstesinden gelebileceğimizi biliyorum.
+Senin elini tuttuğumda ve yanında olduğumda tüm kaygılar yavaşlıyor, tüm sorunlar küçük geliyor.
+Hayatın fırtınalarında birlikte duruyoruz ve bu bana güven, huzur ve mutluluk veriyor.
+Sen benim hem sığınağım hem de en değerli hazinemsin.
+</div>
 
 <div id="daysCounter"></div>
 <div id="fullCounter"></div>
 
-<h2>📸 Bizden Anılar</h2>
+<button id="suprizBtn">🎁 Supriz</button>
 
-<div class="galeri">
+<div id="galeriContainer">
 <img src="1243c9fe-4d37-40d1-9a02-a909bf4c77f4.jpg">
 <img src="13298eea-b3ca-41fa-8bb7-805af1387f08.jpg">
 <img src="1c7a87d1-49b6-4cdf-bc7a-4d8eacfda991.jpg">
@@ -183,15 +197,12 @@ function updateCounters(){
 const startDate = new Date("May 21, 2025 00:00:00");
 const now = new Date();
 const diff = now - startDate;
-
 const days = Math.floor(diff / (1000*60*60*24));
 document.getElementById("daysCounter").innerHTML = "21 Mayıs 2025'ten beri tam <b>" + days + " gün</b> geçti ve ben her gün seni biraz daha seviyorum ❤️";
-
 const totalSeconds = Math.floor(diff/1000);
 const hours = Math.floor((totalSeconds % 86400)/3600);
 const minutes = Math.floor((totalSeconds % 3600)/60);
 const seconds = totalSeconds % 60;
-
 document.getElementById("fullCounter").innerHTML = "Tam zaman: " + days + " gün " + hours + " saat " + minutes + " dakika " + seconds + " saniye";
 }
 setInterval(updateCounters,1000);
@@ -208,6 +219,13 @@ document.querySelector(".hearts").appendChild(heart);
 setTimeout(()=>{heart.remove();},6000);
 }
 setInterval(createHeart,400);
+
+// Supriz butonu
+document.getElementById("suprizBtn").addEventListener("click",function(){
+const galeri = document.getElementById("galeriContainer");
+if(galeri.style.display==="flex"){galeri.style.display="none";}
+else{galeri.style.display="flex";}
+});
 </script>
 
 </body>
